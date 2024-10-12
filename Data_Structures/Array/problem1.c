@@ -18,7 +18,7 @@ struct HashMapNode {
 
 // HASH MAP SIZE
 
-#define HASH_MAO_SIZE 1000
+#define HASH_MAP_SIZE 1000
 
 // Hash function to generate index
 
