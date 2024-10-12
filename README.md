@@ -111,7 +111,7 @@ C_Learning_Projects/
 
 1. Clone the repository:
    ```
-   git clone [https://github.com/Joshua-Coded/C_Learning_Projects](https://github.com/Joshua-Coded/C_Learning_Projects)
+   git clone https://github.com/Joshua-Coded/C_Learning_Projects
    ```
 2. Navigate to the project folder:
    ```
