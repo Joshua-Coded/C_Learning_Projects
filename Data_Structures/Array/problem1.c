@@ -14,7 +14,7 @@ struct HashMapNode {
 	int key;
 	int value;
 	struct HashMapNode* next;
-}
+};
 
 // HASH MAP SIZE
 
@@ -57,7 +57,7 @@ return -1; // not found
 int*  twoSum(int* nums, int numsSize, int target, int* returnSize) {
  // we need to create a hash map (array of pointers to nodes)
 
-	struct HashMapNode* hashMap[HASH_MAP_NODE] = {NULL};
+	struct HashMapNode* hashMap[HASH_MAP_SIZE] = { NULL };
 	
 	// allocate memory for the result
 	int* result = (int*)malloc(2 * sizeof(int));
@@ -67,13 +67,14 @@ int*  twoSum(int* nums, int numsSize, int target, int* returnSize) {
 
 	// check if the complement exists in the hash map
 	int complementIndex = search(hashMap, complement);
-	if (complementIndex != 1) {
-	  // if found, return the indices
-	result[0] = complementIndex;
-	return[1] = i;
-	*returnSize = 2;
-	return result;
-}
+	        if (complementIndex != -1) {
+            // If found, return the indices
+            result[0] = complementIndex;
+            result[1] = i;
+            *returnSize = 2;
+            return result;
+        }
+
 	
 // otherwise insert the current number and its index into the hash map
 	insert(hashMap, nums[i], i);
@@ -97,7 +98,7 @@ int main() {
 
 }
 
-free(result)
+free(result);
 return 0;
 
 }
